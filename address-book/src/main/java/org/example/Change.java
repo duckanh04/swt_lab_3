@@ -1,12 +1,15 @@
 package org.example;
 
 import java.io.*;
+import java.nio.file.Files;
+import java.nio.file.StandardCopyOption;
 import java.util.ArrayList;
+import java.util.InputMismatchException;
 import java.util.List;
 import java.util.Scanner;
 
 public class Change {
-    public static void choose_field() throws FileNotFoundException, IOException {
+    public static void choose_field() throws InputMismatchException, IOException {
         Scanner input = new Scanner(System.in);
         int exit = 0;
         int answer;
@@ -31,9 +34,11 @@ public class Change {
         Scanner input= new Scanner(System.in);
         String f1,f2;
         System.out.println("Give Name: ");
-        f1 = input.nextLine();
+//        f1 = input.nextLine();
+        f1 = "input.nextLine()";
         System.out.println("Give Surname: ");
-        f2 = input.nextLine();
+//        f2 = input.nextLine();
+        f2 = "input.nextLine()";
         File file = new File(System.getProperty("user.dir")+"/src/main/java/org/example/contacts.txt");
         BufferedReader reader = new BufferedReader(new FileReader(file));
         String currentLine;
@@ -89,7 +94,8 @@ public class Change {
         do {
             valid = true;
             try {
-                f1 = Integer.parseInt(input.nextLine());
+                f1 = 0;
+//                f1 = Integer.parseInt(input.nextLine());
             } catch (NumberFormatException e) {
                 //e.printStackTrace();
                 valid = false;
@@ -99,7 +105,8 @@ public class Change {
         do {
             valid = true;
             try {
-                f2 = Integer.parseInt(input.nextLine());
+                f2 = 10;
+//                f2 = Integer.parseInt(input.nextLine());
             } catch (NumberFormatException e) {
                 //e.printStackTrace();
                 valid = false;
@@ -251,7 +258,7 @@ public class Change {
     }
 
     public static void contact_change(String line, String str)  throws IOException, FileNotFoundException{
-        File file1 = new File(System.getProperty("user.dir")+"/src/contacts.txt");
+        File file1 = new File(System.getProperty("user.dir")+"/src/main/java/org/example/contacts.txt");
         BufferedReader reader1 = new BufferedReader(new FileReader(file1));
         String currentLine1;
         boolean first = false;
@@ -262,7 +269,7 @@ public class Change {
         info1 = str.split(",");
         File file2 = new File(System.getProperty("user.dir")+"/src/contactstemp.txt");//i create a temporary file to save the changes
         BufferedWriter writer = new BufferedWriter(new FileWriter(file2));
-        while((currentLine1 = reader1.readLine()) !=null) {
+        while((currentLine1 = reader1.readLine()) !=null && !duplicate) {
             if(!first) {
                 fields = currentLine1.split(",");
                 writer.write(currentLine1 + "\n");
@@ -276,14 +283,17 @@ public class Change {
                 if (info2[2].equals(info1[2])) {
                     System.out.println("Mobile number must be unique among the contacts.");
                     duplicate = true;
+                    return;
                 }
                 else if(info2[3].equals(info1[3])) {
                     System.out.println("Phone number must be unique among the contacts.");
                     duplicate = true;
+                    return;
                 }
                 else if(info2[4].equals(info1[4])) {
                     System.out.println("E-mail must be unique among the contacts.");
                     duplicate = true;
+                    return;
                 }
                 writer.write(currentLine1 + "\n");
             }
@@ -300,6 +310,9 @@ public class Change {
             file2.renameTo(file1);//we rename the temporary file to the original file's name
         }
     }
+
+
+
 
 
 }

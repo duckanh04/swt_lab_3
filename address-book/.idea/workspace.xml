@@ -8,10 +8,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="30f1ad90-f487-471a-b9d6-857072522608" name="Changes" comment="AddTest">
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/ChangeTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/AddTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/AddTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Change.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Change.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/contacts.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/contacts.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/ChangeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/ChangeTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,8 +22,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -44,13 +45,19 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "git-widget-placeholder": "khanhnhat",
     "last_opened_file_path": "D:/OneDrive/A.HOCHANH/SWT301/src_lab 3/address-book/src/main/java/org/example",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="org.example" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\OneDrive\A.HOCHANH\SWT301\src_lab 3\address-book\src\main\java\org\example" />
     </key>
@@ -64,8 +71,8 @@
       <recent name="org.example" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.AddTest.shouldReturnMinhKhai">
-    <configuration name="AddTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.ChangeTest">
+    <configuration name="ChangeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="address-book" />
       <extension name="coverage">
         <pattern>
@@ -74,23 +81,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.AddTest" />
+      <option name="MAIN_CLASS_NAME" value="org.example.ChangeTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AddTest.ABCshouldThrowNumberFormatException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="address-book" />
-      <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.AddTest" />
-      <option name="METHOD_NAME" value="ABCshouldThrowNumberFormatException" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AddTest.phone210123456ShouldReturnTrue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ChangeTest.chooseField2ShouldRunNumberSearch" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="address-book" />
       <extension name="coverage">
         <pattern>
@@ -99,14 +96,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.AddTest" />
-      <option name="METHOD_NAME" value="phone210123456ShouldReturnTrue" />
+      <option name="MAIN_CLASS_NAME" value="org.example.ChangeTest" />
+      <option name="METHOD_NAME" value="chooseField2ShouldRunNumberSearch" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AddTest.shouldReturnMinhKhai" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ChangeTest.testContactChangeDuplicateMobileNumber" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="address-book" />
       <extension name="coverage">
         <pattern>
@@ -115,18 +112,40 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.AddTest" />
-      <option name="METHOD_NAME" value="shouldReturnMinhKhai" />
+      <option name="MAIN_CLASS_NAME" value="org.example.ChangeTest" />
+      <option name="METHOD_NAME" value="testContactChangeDuplicateMobileNumber" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AddTest.shouldReturnNull" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ChangeTest.testContactChangeDuplicatePhoneNumber" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="address-book" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.AddTest" />
-      <option name="METHOD_NAME" value="shouldReturnNull" />
+      <option name="MAIN_CLASS_NAME" value="org.example.ChangeTest" />
+      <option name="METHOD_NAME" value="testContactChangeDuplicatePhoneNumber" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ChangeTest.testContactChangeSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="address-book" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.ChangeTest" />
+      <option name="METHOD_NAME" value="testContactChangeSuccess" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -134,11 +153,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.AddTest.shouldReturnMinhKhai" />
-        <item itemvalue="JUnit.AddTest.phone210123456ShouldReturnTrue" />
-        <item itemvalue="JUnit.AddTest" />
-        <item itemvalue="JUnit.AddTest.shouldReturnNull" />
-        <item itemvalue="JUnit.AddTest.ABCshouldThrowNumberFormatException" />
+        <item itemvalue="JUnit.ChangeTest" />
+        <item itemvalue="JUnit.ChangeTest.chooseField2ShouldRunNumberSearch" />
+        <item itemvalue="JUnit.ChangeTest.testContactChangeDuplicateMobileNumber" />
+        <item itemvalue="JUnit.ChangeTest.testContactChangeSuccess" />
+        <item itemvalue="JUnit.ChangeTest.testContactChangeDuplicatePhoneNumber" />
       </list>
     </recent_temporary>
   </component>
@@ -156,5 +175,16 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="AddTest" />
     <option name="LAST_COMMIT_MESSAGE" value="AddTest" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/Change.java</url>
+          <line>270</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
