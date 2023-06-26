@@ -1,0 +1,5 @@
+B03 | Sug | A | 12 | 3 | PA | 11
+B02 | App | C |  5 | 2 | PB |  4
+B05 | Roo | D |  7 | 6 | PE | 15
+B07 | Bee | E | 11 | 3 | PF | 12
+B04 | Boo | F |  9 | 5 | PD |  5

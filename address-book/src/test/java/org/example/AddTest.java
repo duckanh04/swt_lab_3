@@ -1,3 +1,5 @@
+package org.example;
+
 import org.example.Add;
 import org.junit.jupiter.api.Test;
 
@@ -54,13 +56,19 @@ public class AddTest {
     @Test
     void shouldReturnMinhKhai()
     {
-        String address = Add.getAddress("MinhKhai");
-        assertEquals("MinhKhai", address);
+        // Given
+        String address = "MinhKhai";
+        // When
+        String result = Add.getAddress(address);
+        // Then
+        String expected = "MinhKhai";
+        assertEquals(expected, result);
     }
 
     @Test
     void shouldThrowIllegalArgumentException() {
         assertThrows(IllegalArgumentException.class, () -> Add.getAddress(""));
+
     }
 
     // Test 4
